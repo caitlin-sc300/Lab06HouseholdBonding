@@ -44,18 +44,35 @@ public class Child {
         
         return favColor;
     }
-   
+   public class Dog {
+    private String name;
+    private int age;
+    private String breed;
 
-    /**
-     * For this method, our child will take an instance of a dog to play fetch with.
-     * The age of the dog will determine the resulting string as follows:
-     * If the dog is younger than 2 or older than 12, return "didn't fetch the ball"
-     * If the dog is 2-5 (inclusive), return "got the ball but didn't bring it back"
-     * For any other age, return "fetched the ball"
-     *
-     * @param dog
-     * @return string with appropriate phrase
-     */
+    public Dog(String name, int age, String breed){
+        this.name = name;
+        this.age = age;
+        this.breed = breed;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setAge(int age){
+        this.age = age;
+    }
+    public int getAge(){
+        return age;
+    }
+    public void setBreed(String breed){
+        this.breed = breed;
+    }
+    public String getBreed(){
+        return breed;
+    }
+
     public String playFetch(Dog dog) {
         int dogAge = dog.getAge();
 
@@ -72,17 +89,5 @@ public class Child {
         Dog buster = new Dog("Buster", 4, "Golden Retriever");
         System.out.println(roman.playFetch(buster)); //should print "got the ball but didn't bring it back"
     }
-Class Dog {
-    private String name;
-    private int age;
-    private String breed;
 
-    public Dog(String name, int age, String breed){
-        this.name = name;
-        this.age = age:
-        this.breed = breed;
-    }
-    public int get.age(){
-        return age;
-    }
 }
